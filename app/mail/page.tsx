@@ -180,6 +180,13 @@ export default function Page() {
     }
   };
 
+  const content = `Hi, let's have a meeting tomorrow to discuss the project. I've
+              been reviewing the project details and have some ideas I'd like to
+              share. It's crucial that we align on our next steps to ensure the
+              project's success. Please come prepared with any questions or
+              insights you may have. Looking forward to our meeting! Best
+              regards, William`;
+
   return (
     <div className={`${mailStyle.mailWrapper} border rounded-lg`}>
       <ResizablePanelGroup direction='horizontal'>
@@ -332,12 +339,7 @@ export default function Page() {
               <div className='ml-auto text-xs'>Oct 22, 2023, 9:00:00 AM</div>
             </div>
             <div className='flex-1 p-4 whitespace-pre-wrap text-sm border-b'>
-              Hi, let's have a meeting tomorrow to discuss the project. I've
-              been reviewing the project details and have some ideas I'd like to
-              share. It's crucial that we align on our next steps to ensure the
-              project's success. Please come prepared with any questions or
-              insights you may have. Looking forward to our meeting! Best
-              regards, William
+              {content}
             </div>
             <div className='p-4'>
               <Textarea placeholder='Reply William Smith...'></Textarea>
